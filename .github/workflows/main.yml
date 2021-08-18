@@ -1,0 +1,48 @@
+name: CI
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build_windows:
+    name: windows build
+    runs-on: windows-2019
+    steps:
+    - name: Checkout DGEngine
+      uses: actions/checkout@v2
+
+    - name: Restore cached dependencies
+      id: cache-windows
+      uses: actions/cache@v1
+      with:
+        path: C:/vcpkg/installed
+        key: cache-windows
+
+    - name: Install dependencies
+      if: steps.cache-windows.outputs.cache-hit != 'true'
+      run: vcpkg install physfs:x86-windows-static sfml:x86-windows-static
+
+    - name: Setup MSBuild
+      uses: microsoft/setup-msbuild@v1.0.2
+
+    - name: MSBuild DGEngine original
+      run: |
+        vcpkg integrate install
+        msbuild DGEngine.original.vcxproj /p:Configuration="Release Static NoMovie" /p:Platform=Win32
+
+    - name: MSBuild DGEngine modules
+      run: |
+        vcpkg integrate install
+        msbuild DGEngine.modules.vcxproj /p:Configuration="Release Static NoMovie" /p:Platform=Win32
+
+    - name: Create DGEngine.zip
+      run: 7z a DGEngine.zip "./Release Static NoMovie/*.exe" LICENSE.* README.* main.json gamefiles*
+
+    - name: Create artifact
+      uses: actions/upload-artifact@v1
+      with:
+        name: DGEngine-windows-x86
+        path: DGEngine.zip

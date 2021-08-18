@@ -1,0 +1,77 @@
+{
+  "action": {
+    "name": "resource.add",
+    "id": "mainMenu"
+  },
+  "inputEvent": [
+    {
+      "key": "f1",
+      "action": { "name": "load", "file": "ui/settings.json" }
+    },
+    {
+      "key": "esc",
+      "action": { "name": "button.click", "id": "quit" }
+    }
+  ],
+  "texture": [
+    {
+      "id": "empty",
+      "color": "0x0000AA22",
+      "size": [1, 1]
+    },
+    {
+      "id": "cross",
+      "file": "ui/cross.png"
+    }
+  ],
+  "image": {
+    "id": "cross",
+    "texture": "cross",
+    "anchor": "all"
+  },
+  "font": {
+    "id": "liberationSerif",
+    "file": "res/LiberationSerif-Regular.ttf"
+  },
+  "text": {
+    "id": "creditsText",
+    "font": "liberationSerif",
+    "fontSize": 16,
+    "file": "ui/credits.txt"
+  },
+  "scrollable": {
+    "id": "creditsScroll",
+    "drawable": "creditsText",
+    "refresh": 50,
+    "anchor": "none",
+    "position": [30, 115],
+    "size": [580, 250],
+    "onComplete": {
+      "name": "game.fadeOut",
+      "action": [
+        {
+          "name": "resource.pop",
+          "ignorePrevious": false
+        },
+        {
+          "name": "cursor.pop"
+        },
+        {
+          "name": "game.fadeIn"
+        }
+      ]
+    }
+  },
+  "button": {
+    "id": "speed",
+    "texture": "empty",
+    "textureRect": [640, 480],
+    "resizable": true,
+    "anchor": "all",
+    "onClickIn": { "name": "scrollable.setSpeed", "id": "creditsScroll", "speed": 5 },
+    "onClickOut": { "name": "scrollable.setSpeed", "id": "creditsScroll", "speed": 35 }
+  },
+  "action": {
+    "name": "game.fadeIn"
+  }
+}
