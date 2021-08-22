@@ -1,11 +1,6 @@
-module;
-
-#include <cstdint>
-
 module dgengine.inputevent;
 
 import dgengine.utils.utils;
-import sfml;
 
 size_t CompareEvent::operator()(const sf::Event& obj) const noexcept
 {

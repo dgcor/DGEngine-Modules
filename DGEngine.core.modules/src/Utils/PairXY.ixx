@@ -1,10 +1,6 @@
-module;
-
-#include <cstdint>
-
 export module dgengine.utils.pairxy;
 
-export import <compare>;
+import stl;
 
 export
 {

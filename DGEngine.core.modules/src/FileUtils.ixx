@@ -1,10 +1,6 @@
-module;
-
-#include <string>
-#include <string_view>
-#include <vector>
-
 export module dgengine.fileutils;
+
+import stl;
 
 export namespace FileUtils
 {

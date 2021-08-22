@@ -1,12 +1,9 @@
-module;
-
-#include <memory>
-
 export module dgengine.parser.scrollable;
 
 import dgengine.game;
 import dgengine.json.parser;
 import dgengine.scrollable;
+import stl;
 
 export namespace Parser
 {

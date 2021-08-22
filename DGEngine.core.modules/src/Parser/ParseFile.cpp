@@ -1,9 +1,6 @@
 module;
 
-#include <cstdarg>
-#include <memory>
 #include <physfs.h>
-#include <string_view>
 
 module dgengine.parser.file;
 

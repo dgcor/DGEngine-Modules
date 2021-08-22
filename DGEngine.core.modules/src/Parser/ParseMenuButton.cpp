@@ -1,9 +1,3 @@
-module;
-
-#include <memory>
-#include <string_view>
-#include <variant>
-
 module dgengine.parser.menubutton;
 
 import dgengine.bitmaptext;

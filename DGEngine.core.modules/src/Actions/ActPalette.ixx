@@ -1,12 +1,8 @@
-module;
-
-#include <memory>
-#include <string_view>
-
 export module dgengine.actions.palette;
 
 import dgengine.actions.action;
 import dgengine.game;
+import stl;
 
 export class ActPaletteReplace : public Action
 {

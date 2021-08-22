@@ -1,8 +1,3 @@
-module;
-
-#include <cmath>
-#include <string_view>
-
 module dgengine.image;
 
 import dgengine.game;

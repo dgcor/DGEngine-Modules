@@ -1,5 +1,3 @@
-module;
-
 export module dgengine.sfml.vertexshape;
 
 import sfml;

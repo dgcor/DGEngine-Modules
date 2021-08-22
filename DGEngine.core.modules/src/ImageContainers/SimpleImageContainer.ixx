@@ -1,7 +1,3 @@
-module;
-
-#include <string_view>
-
 export module dgengine.imagecontainers.simpleimagecontainer;
 
 import dgengine.blendmode;
@@ -9,6 +5,7 @@ import dgengine.imagecontainers.imagecontainer;
 import dgengine.palette;
 import dgengine.sfml.image2;
 import sfml;
+import stl;
 
 export class SimpleImageContainer : public ImageContainer
 {

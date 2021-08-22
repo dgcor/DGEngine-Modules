@@ -1,8 +1,3 @@
-module;
-
-#include <memory>
-#include <string_view>
-
 module dgengine.panel;
 
 import dgengine.game;

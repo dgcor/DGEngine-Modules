@@ -1,13 +1,9 @@
-module;
-
-#include <memory>
-#include <string_view>
-
 export module dgengine.actions.animation;
 
 import dgengine.actions.action;
 import dgengine.animation;
 import dgengine.game;
+import stl;
 
 export class ActAnimationPause : public Action
 {

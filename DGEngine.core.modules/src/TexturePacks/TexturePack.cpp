@@ -1,8 +1,3 @@
-module;
-
-#include <cstdint>
-#include <utility>
-
 module dgengine.texturepacks.texturepack;
 
 void TexturePack::updateTextureRect(TextureInfo& ti)

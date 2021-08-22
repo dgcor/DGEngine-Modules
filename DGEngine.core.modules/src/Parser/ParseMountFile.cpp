@@ -1,11 +1,8 @@
-module;
-
-#include <string_view>
-
 module dgengine.parser.mountfile;
 
 import dgengine.fileutils;
 import dgengine.parser.utils;
+import stl;
 
 namespace Parser
 {

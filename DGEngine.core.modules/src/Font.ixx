@@ -1,12 +1,8 @@
-module;
-
-#include <memory>
-#include <variant>
-
 export module dgengine.font;
 
 import dgengine.bitmapfont;
 import dgengine.freetypefont;
+import stl;
 
 export
 {

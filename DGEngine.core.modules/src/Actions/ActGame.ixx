@@ -1,10 +1,3 @@
-module;
-
-#include <cmath>
-#include <memory>
-#include <string_view>
-#include <variant>
-
 export module dgengine.actions.game;
 
 import dgengine.actions.action;
@@ -12,6 +5,7 @@ import dgengine.game;
 import dgengine.utils.utils;
 import dgengine.variable;
 import sfml;
+import stl;
 
 export class ActGameAddToProperty : public Action
 {

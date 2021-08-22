@@ -1,10 +1,10 @@
 module;
 
 #include "re.h"
-#include <string>
-#include <string_view>
 
 export module dgengine.utils.regex;
+
+import stl;
 
 export class Regex
 {

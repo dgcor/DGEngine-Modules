@@ -1,11 +1,8 @@
-module;
-
-#include <string_view>
-
 export module dgengine.sfml.utils;
 
 import dgengine.blendmode;
 import sfml;
+import stl;
 
 export namespace SFMLUtils
 {

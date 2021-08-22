@@ -31,8 +31,6 @@ extern "C"
 #include <libswscale/swscale.h>
 }
 
-#include <list>
-
 module sfemovie.videostream;
 
 namespace sfe

@@ -1,10 +1,3 @@
-module;
-
-#include <cstdint>
-#include <limits>
-#include <memory>
-#include <utility>
-
 module dgengine.texturepacks.simpletexturepack;
 
 static bool makeTexturePack(MultiTexture& t, const std::pair<uint32_t, uint32_t>& frames)

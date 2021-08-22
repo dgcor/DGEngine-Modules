@@ -1,11 +1,8 @@
-module;
-
-#include <memory>
-
 export module dgengine.freetypefont;
 
 import dgengine.sfml.physfsstream;
 import sfml;
+import stl;
 
 export class FreeTypeFont : public sf::Font
 {

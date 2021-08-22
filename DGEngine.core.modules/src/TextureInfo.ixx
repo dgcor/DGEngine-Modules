@@ -1,14 +1,9 @@
-module;
-
-#include <cstdint>
-#include <memory>
-#include <variant>
-
 export module dgengine.textureinfo;
 
 import dgengine.blendmode;
 import dgengine.palette;
 import sfml;
+import stl;
 
 export struct TextureInfo
 {

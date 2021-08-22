@@ -1,12 +1,9 @@
-module;
-
-#include <memory>
-
 export module dgengine.fadeinout;
 
 import dgengine.actions.action;
 import dgengine.utils.elapsedtime;
 import sfml;
+import stl;
 
 // fade out - hide
 // fade in - show

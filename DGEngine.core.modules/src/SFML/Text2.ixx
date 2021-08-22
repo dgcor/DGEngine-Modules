@@ -1,10 +1,7 @@
-module;
-
-#include <vector>
-
 export module dgengine.sfml.text2;
 
 import sfml;
+import stl;
 
 export namespace sf
 {

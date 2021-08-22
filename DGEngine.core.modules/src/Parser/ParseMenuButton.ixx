@@ -1,7 +1,3 @@
-module;
-
-#include <string_view>
-
 export module dgengine.parser.menubutton;
 
 import dgengine.anchor;
@@ -11,6 +7,7 @@ import dgengine.game;
 import dgengine.json.parser;
 import dgengine.menu;
 import sfml;
+import stl;
 
 export namespace Parser
 {

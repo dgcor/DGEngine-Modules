@@ -1,7 +1,3 @@
-module;
-
-#include <memory>
-
 module dgengine.baseanimation;
 
 BaseAnimation::BaseAnimation(const std::shared_ptr<TexturePack>& texturePack_, bool pause_)

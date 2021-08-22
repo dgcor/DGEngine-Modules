@@ -1,9 +1,6 @@
-module;
-
-#include <cstdint>
-#include <type_traits>
-
 export module dgengine.bindingflags;
+
+import stl;
 
 export enum class BindingFlags : int32_t
 {

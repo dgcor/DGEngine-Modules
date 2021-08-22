@@ -1,13 +1,9 @@
-module;
-
-#include <string_view>
-#include <vector>
-
 export module dgengine.bindabletext;
 
 import dgengine.bindingflags;
 import dgengine.text;
 import sfml;
+import stl;
 
 export class BindableText : public Text
 {

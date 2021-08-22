@@ -1,7 +1,3 @@
-module;
-
-#include <string_view>
-
 module dgengine.bindabletext;
 
 import dgengine.textutils;

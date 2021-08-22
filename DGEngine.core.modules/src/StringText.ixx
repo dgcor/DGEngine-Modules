@@ -1,13 +1,11 @@
-module;
-
-#include <string_view>
-
 export module dgengine.stringtext;
 
 import dgengine.drawabletext;
 import dgengine.freetypefont;
 import dgengine.sfml.text2;
+import dgengine.variable;
 import sfml;
+import stl;
 
 export class StringText : public DrawableText
 {

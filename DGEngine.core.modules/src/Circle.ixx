@@ -1,12 +1,9 @@
-module;
-
-#include <memory>
-#include <string_view>
-
 export module dgengine.circle;
 
 import dgengine.uiobject;
+import dgengine.variable;
 import sfml;
+import stl;
 
 export class Circle : public sf::CircleShape, public UIObject
 {

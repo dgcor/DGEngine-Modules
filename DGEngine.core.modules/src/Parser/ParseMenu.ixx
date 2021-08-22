@@ -1,9 +1,3 @@
-module;
-
-#include <memory>
-#include <string_view>
-#include <vector>
-
 export module dgengine.parser.menu;
 
 import dgengine.game;
@@ -11,6 +5,7 @@ import dgengine.json.parser;
 import dgengine.menu;
 import dgengine.queryable;
 import dgengine.variable;
+import stl;
 
 export namespace Parser
 {

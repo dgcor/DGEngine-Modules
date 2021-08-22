@@ -1,13 +1,9 @@
-module;
-
-#include <memory>
-#include <vector>
-
 export module dgengine.texturepacks.simpletexturepack;
 
 import dgengine.animationtype;
 import dgengine.texturepacks.texturepack;
 import sfml;
+import stl;
 
 export struct MultiTexture
 {

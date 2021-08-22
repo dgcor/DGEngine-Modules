@@ -1,13 +1,4 @@
-module;
-
-#include <cassert>
-#include <memory>
-
 module dgengine.cachedimagepack;
-
-import dgengine.imagecontainers.imagecontainer;
-import dgengine.palette;
-import sfml;
 
 CachedImagePack::CachedImagePack(const ImageContainer* imgContainer_,
 	const std::shared_ptr<Palette>& palette_, bool isIndexed_)

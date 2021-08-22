@@ -1,13 +1,9 @@
-module;
-
-#include <memory>
-#include <vector>
-
 export module dgengine.actions.random;
 
 import dgengine.actions.action;
 import dgengine.game;
 import dgengine.utils.utils;
+import stl;
 
 export class ActRandomList : public Action
 {

@@ -1,9 +1,3 @@
-module;
-
-#include <cmath>
-#include <memory>
-#include <string_view>
-
 module dgengine.menu;
 
 import dgengine.game;

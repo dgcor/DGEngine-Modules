@@ -1,13 +1,11 @@
-module;
-
-#include <string>
-
 export module dgengine.predicates.io;
 
 import dgengine.fileutils;
 import dgengine.game;
 import dgengine.gameutils;
 import dgengine.predicates.predicate;
+import dgengine.variable;
+import stl;
 
 export class PredFileExists : public Predicate
 {

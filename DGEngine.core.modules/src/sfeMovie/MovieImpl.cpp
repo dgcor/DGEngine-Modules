@@ -21,12 +21,6 @@
  *
  */
 
-module;
-
-#include <cmath>
-#include <memory>
-#include <string_view>
-
 module sfemovie.movieimpl;
 
 import sfemovie.demuxer;

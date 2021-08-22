@@ -1,12 +1,3 @@
-module;
-
-#include <initializer_list>
-#include <list>
-#include <memory>
-#include <string>
-#include <variant>
-#include <vector>
-
 export module dgengine.resourcemanager;
 
 import dgengine.actions.action;
@@ -25,6 +16,7 @@ import dgengine.uiobject;
 import dgengine.utils.reverseiterable;
 import dgengine.utils.unorderedstringmap;
 import sfml;
+import stl;
 
 struct ResourceBundle
 {

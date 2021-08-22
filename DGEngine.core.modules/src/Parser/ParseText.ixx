@@ -1,13 +1,10 @@
-module;
-
-#include <memory>
-
 export module dgengine.parser.text;
 
 import dgengine.bindabletext;
 import dgengine.drawabletext;
 import dgengine.game;
 import dgengine.json.parser;
+import stl;
 
 export namespace Parser
 {

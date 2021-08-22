@@ -1,10 +1,7 @@
-module;
-
-#include <string_view>
-
 export module dgengine.parser.parser;
 
 import dgengine.game;
+import stl;
 
 export namespace Parser
 {

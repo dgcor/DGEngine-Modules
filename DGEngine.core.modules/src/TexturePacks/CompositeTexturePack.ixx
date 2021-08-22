@@ -1,10 +1,7 @@
-module;
-
-#include <vector>
-
 export module dgengine.texturepacks.compositetexturepack;
 
 import dgengine.texturepacks.texturepack;
+import stl;
 
 export class CompositeTexturePack : public TexturePack
 {

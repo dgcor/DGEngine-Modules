@@ -1,12 +1,10 @@
-module;
-
-#include <string_view>
-
 export module dgengine.bitmapbutton;
 
 import dgengine.button;
 import dgengine.image;
+import dgengine.variable;
 import sfml;
+import stl;
 
 export class BitmapButton : public Button, public Image
 {

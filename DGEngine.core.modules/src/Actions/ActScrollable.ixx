@@ -1,14 +1,10 @@
-module;
-
-#include <memory>
-#include <string_view>
-
 export module dgengine.actions.scrollable;
 
 import dgengine.actions.action;
 import dgengine.game;
 import dgengine.scrollable;
 import sfml;
+import stl;
 
 export class ActScrollableSetSpeed : public Action
 {

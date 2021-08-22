@@ -1,12 +1,8 @@
-module;
-
-#include <unordered_map>
-#include <vector>
-
 export module dgengine.texturepacks.indexedtexturepack;
 
 import dgengine.texturepacks.texturepack;
 import dgengine.utils.elapsedtime;
+import stl;
 
 export class IndexedTexturePack : public TexturePack
 {

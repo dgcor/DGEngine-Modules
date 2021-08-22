@@ -1,11 +1,9 @@
-module;
-
-#include <vector>
-
 export module dgengine.ifcondition;
 
 import dgengine.game;
+import dgengine.variable;
 import dgengine.varorpredicate;
+import stl;
 
 // use brackets to force order
 // ex: var1 == 2 and (var2 == 3 or var2 = 4)

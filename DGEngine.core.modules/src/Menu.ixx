@@ -1,13 +1,10 @@
-module;
-
-#include <memory>
-#include <string_view>
-
 export module dgengine.menu;
 
 import dgengine.stringbutton;
 import dgengine.uiobject;
+import dgengine.variable;
 import sfml;
+import stl;
 
 export class Menu : public UIObject
 {

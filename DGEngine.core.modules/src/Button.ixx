@@ -1,13 +1,10 @@
-module;
-
-#include <memory>
-#include <string_view>
-
 export module dgengine.button;
 
 import dgengine.inputevent;
 import dgengine.uiobject;
+import dgengine.variable;
 import sfml;
+import stl;
 
 export class Button : public virtual UIObject
 {

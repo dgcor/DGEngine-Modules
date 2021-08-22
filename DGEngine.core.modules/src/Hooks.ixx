@@ -1,8 +1,3 @@
-module;
-
-#include <memory>
-#include <string_view>
-
 export module dgengine.hooks;
 
 import dgengine.actions.action;
@@ -15,6 +10,7 @@ import dgengine.queryable;
 import dgengine.shadermanager;
 import dgengine.variable;
 import sfml;
+import stl;
 
 class Game;
 

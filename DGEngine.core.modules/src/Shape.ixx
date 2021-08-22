@@ -1,12 +1,10 @@
-module;
-
-#include <string_view>
-
 export module dgengine.shape;
 
 import dgengine.sfml.vertexshape;
 import dgengine.uiobject;
+import dgengine.variable;
 import sfml;
+import stl;
 
 export class Shape : public VertexShape, public UIObject
 {

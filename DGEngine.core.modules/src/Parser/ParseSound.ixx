@@ -1,14 +1,10 @@
-module;
-
-#include <memory>
-#include <string_view>
-
 export module dgengine.parser.sound;
 
 import dgengine.actions.action;
 import dgengine.game;
 import dgengine.json.parser;
 import sfml;
+import stl;
 
 export namespace Parser
 {

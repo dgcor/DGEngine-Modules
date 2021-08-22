@@ -33,8 +33,6 @@ extern "C"
 #include <libswresample/swresample.h>
 }
 
-#include <cstring>
-
 module sfemovie.audiostream;
 
 import sfemovie.movie;

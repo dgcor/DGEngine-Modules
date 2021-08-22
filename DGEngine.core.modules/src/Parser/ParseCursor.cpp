@@ -1,15 +1,9 @@
-module;
-
-#include <cassert>
-#include <cmath>
-#include <memory>
-#include <string_view>
-
 module dgengine.parser.cursor;
 
 import dgengine.gameutils;
 import dgengine.panel;
 import dgengine.parser.utils;
+import stl;
 
 namespace Parser
 {

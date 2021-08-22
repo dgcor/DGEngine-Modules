@@ -1,13 +1,11 @@
-module;
-
-#include <string_view>
-
 export module dgengine.bitmaptext;
 
 import dgengine.bitmapfont;
 import dgengine.drawabletext;
 import dgengine.sfml.vertexarray2;
+import dgengine.variable;
 import sfml;
+import stl;
 
 export class BitmapText : public DrawableText
 {

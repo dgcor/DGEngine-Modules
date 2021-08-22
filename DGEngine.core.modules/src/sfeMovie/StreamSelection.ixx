@@ -21,11 +21,9 @@
  *
  */
 
-module;
-
-#include <string>
-
 export module sfemovie.streamselection;
+
+import stl;
 
 export namespace sfe
 {

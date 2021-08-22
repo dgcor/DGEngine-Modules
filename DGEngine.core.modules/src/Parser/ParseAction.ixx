@@ -1,12 +1,9 @@
-module;
-
-#include <memory>
-
 export module dgengine.parser.action;
 
 import dgengine.actions.action;
 import dgengine.game;
 import dgengine.json.parser;
+import stl;
 
 export namespace Parser
 {

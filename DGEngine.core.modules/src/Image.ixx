@@ -1,13 +1,11 @@
-module;
-
-#include <string_view>
-
 export module dgengine.image;
 
 import dgengine.anchor;
 import dgengine.sfml.compositesprite;
 import dgengine.uiobject;
+import dgengine.variable;
 import sfml;
+import stl;
 
 export class Image : public virtual UIObject
 {

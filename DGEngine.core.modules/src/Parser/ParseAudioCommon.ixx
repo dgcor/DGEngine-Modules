@@ -1,16 +1,10 @@
-module;
-
-#include <string>
-#include <string_view>
-#include <unordered_map>
-#include <vector>
-
 export module dgengine.parser.audiocommon;
 
 import dgengine.game;
 import dgengine.json.parser;
 import dgengine.sfml.musicloops;
 import sfml;
+import stl;
 
 export namespace Parser
 {

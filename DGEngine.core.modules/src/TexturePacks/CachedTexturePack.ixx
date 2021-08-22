@@ -1,11 +1,8 @@
-module;
-
-#include <vector>
-
 export module dgengine.texturepacks.cachedtexturepack;
 
 import dgengine.imagecontainers.imagecontainer;
 import dgengine.texturepacks.texturepack;
+import stl;
 
 export class CachedTexturePack : public TexturePack
 {

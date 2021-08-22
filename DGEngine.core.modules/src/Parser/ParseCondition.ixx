@@ -1,13 +1,9 @@
-module;
-
-#include <cstdint>
-#include <memory>
-
 export module dgengine.parser.condition;
 
 import dgengine.actions.action;
 import dgengine.game;
 import dgengine.json.parser;
+import stl;
 
 export namespace Parser
 {

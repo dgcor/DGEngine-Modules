@@ -6,8 +6,6 @@ module;
 
 module dgengine.sfml.wave2;
 
-import sfml;
-
 static size_t readWave2(void* pUserData, void* pBufferOut, size_t bytesToRead)
 {
 	sf::InputStream* stream = (sf::InputStream*)pUserData;

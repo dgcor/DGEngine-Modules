@@ -1,9 +1,6 @@
-module;
-
-#include <cstdint>
-#include <type_traits>
-
 export module dgengine.anchor;
+
+import stl;
 
 export enum class Anchor : int32_t
 {

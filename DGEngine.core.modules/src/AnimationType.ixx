@@ -1,8 +1,6 @@
-module;
-
-#include <cstdint>
-
 export module dgengine.animationtype;
+
+import stl;
 
 export enum class AnimationType : int32_t
 {

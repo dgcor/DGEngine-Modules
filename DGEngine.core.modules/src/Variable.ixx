@@ -1,10 +1,6 @@
-module;
-
-#include <cstdint>
-#include <string>
-#include <variant>
-
 export module dgengine.variable;
+
+import stl;
 
 export typedef std::variant<std::string, int64_t, double, bool> Variable;
 

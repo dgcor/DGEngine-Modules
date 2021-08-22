@@ -29,12 +29,11 @@ extern "C"
 #include <libswresample/swresample.h>
 }
 
-#include <cstdint>
-
 export module sfemovie.audiostream;
 
 import sfemovie.stream;
 import sfml;
+import stl;
 
 export namespace sfe
 {

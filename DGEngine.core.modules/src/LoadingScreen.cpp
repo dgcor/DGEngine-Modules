@@ -1,8 +1,3 @@
-module;
-
-#include <algorithm>
-#include <cmath>
-
 module dgengine.loadingscreen;
 
 import dgengine.sfml.physfsstream;

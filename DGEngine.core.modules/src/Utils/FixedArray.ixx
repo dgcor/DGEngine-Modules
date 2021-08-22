@@ -1,8 +1,6 @@
-module;
-
-#include <array>
-
 export module dgengine.utils.fixedarray;
+
+export import <array>;
 
 export
 {

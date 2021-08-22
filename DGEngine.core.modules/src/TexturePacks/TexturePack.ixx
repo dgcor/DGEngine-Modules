@@ -1,12 +1,9 @@
-module;
-
-#include <memory>
-
 export module dgengine.texturepacks.texturepack;
 
 import dgengine.animationinfo;
 import dgengine.textureinfo;
 import sfml;
+import stl;
 
 export class TexturePack
 {

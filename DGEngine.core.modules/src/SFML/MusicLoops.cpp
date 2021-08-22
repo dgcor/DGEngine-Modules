@@ -1,8 +1,3 @@
-module;
-
-#include <iostream>
-#include <variant>
-
 module dgengine.sfml.musicloops;
 
 import dgengine.sfml.music2;

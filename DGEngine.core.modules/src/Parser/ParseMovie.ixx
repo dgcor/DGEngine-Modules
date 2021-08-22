@@ -1,13 +1,9 @@
-module;
-
-#include <memory>
-#include <string_view>
-
 export module dgengine.parser.movie;
 
 import dgengine.game;
 import dgengine.json.parser;
 import dgengine.movie;
+import stl;
 
 export namespace Parser
 {

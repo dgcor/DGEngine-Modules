@@ -2,6 +2,7 @@ module dgengine.parser.variable;
 
 import dgengine.parser.utils;
 import dgengine.variable;
+import stl;
 
 namespace Parser
 {

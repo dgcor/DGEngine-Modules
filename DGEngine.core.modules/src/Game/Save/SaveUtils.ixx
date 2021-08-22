@@ -1,8 +1,3 @@
-module;
-
-#include <cmath>
-#include <string_view>
-
 export module dgengine.game.save.utils;
 
 import dgengine.game.save.properties;
@@ -11,6 +6,7 @@ import dgengine.utils.number;
 import dgengine.utils.pairxy;
 import dgengine.utils.unorderedstringmap;
 import dgengine.variable;
+import stl;
 
 export namespace SaveUtils
 {

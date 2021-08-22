@@ -1,12 +1,9 @@
-module;
-
-#include <memory>
-
 export module dgengine.parser.texture;
 
 import dgengine.game;
 import dgengine.json.parser;
 import sfml;
+import stl;
 
 export namespace Parser
 {

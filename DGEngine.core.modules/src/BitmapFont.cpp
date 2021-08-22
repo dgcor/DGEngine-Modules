@@ -1,9 +1,3 @@
-module;
-
-#include <cmath>
-#include <memory>
-#include <string_view>
-
 module dgengine.bitmapfont;
 
 BitmapFont::BitmapFont(const std::shared_ptr<TexturePack>& texturePack_,

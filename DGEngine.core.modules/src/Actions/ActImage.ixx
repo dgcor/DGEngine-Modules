@@ -1,14 +1,11 @@
-module;
-
-#include <memory>
-#include <string_view>
-
 export module dgengine.actions.image;
 
 import dgengine.actions.action;
 import dgengine.game;
 import dgengine.image;
 import dgengine.utils.utils;
+import dgengine.variable;
+import stl;
 
 export class ActImageEnableOutline : public Action
 {

@@ -1,8 +1,6 @@
-module;
-
-#include <cmath>
-
 export module dgengine.utils.easingfunctions;
+
+import stl;
 
 // https://easings.net/
 // t is the current time.

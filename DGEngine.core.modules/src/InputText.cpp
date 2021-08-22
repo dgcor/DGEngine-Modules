@@ -1,10 +1,3 @@
-module;
-
-#include <cstdint>
-#include <memory>
-#include <string_view>
-#include <variant>
-
 module dgengine.inputtext;
 
 import dgengine.game;

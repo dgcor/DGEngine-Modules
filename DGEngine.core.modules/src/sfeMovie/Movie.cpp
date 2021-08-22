@@ -21,12 +21,6 @@
  *
  */
 
-module;
-
-#include <memory>
-#include <string_view>
-#include <vector>
-
 module sfemovie.movie;
 
 import sfemovie.movieimpl;

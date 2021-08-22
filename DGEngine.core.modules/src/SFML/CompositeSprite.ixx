@@ -1,11 +1,8 @@
-module;
-
-#include <vector>
-
 export module dgengine.sfml.compositesprite;
 
 import dgengine.sfml.sprite2;
 import sfml;
+import stl;
 
 export class CompositeSprite
 {

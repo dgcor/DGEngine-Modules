@@ -1,10 +1,3 @@
-module;
-
-#include <memory>
-#include <string_view>
-#include <variant>
-#include <vector>
-
 export module dgengine.actions.condition;
 
 import dgengine.actions.action;
@@ -15,7 +8,9 @@ import dgengine.image;
 import dgengine.parser.variable;
 import dgengine.predicates.predicate;
 import dgengine.utils.utils;
+import dgengine.variable;
 import dgengine.varorpredicate;
+import stl;
 
 export class ActIfCondition : public Action
 {

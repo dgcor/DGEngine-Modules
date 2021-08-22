@@ -1,13 +1,9 @@
-module;
-
-#include <memory>
-#include <string_view>
-
 export module dgengine.actions.inputtext;
 
 import dgengine.actions.action;
 import dgengine.game;
 import dgengine.inputtext;
+import stl;
 
 export class ActInputTextClick : public Action
 {

@@ -1,10 +1,7 @@
-module;
-
-#include <vector>
-
 export module dgengine.texturepacks.recttexturepack;
 
 import dgengine.texturepacks.texturepack;
+import stl;
 
 export class RectTexturePack : public TexturePack
 {

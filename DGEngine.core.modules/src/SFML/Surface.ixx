@@ -1,7 +1,3 @@
-module;
-
-#include <cstdint>
-
 export module dgengine.sfml.surface;
 
 import dgengine.game;
@@ -11,6 +7,7 @@ import dgengine.sfml.vertexarray2;
 import dgengine.sfml.view2;
 import dgengine.uiobject;
 import sfml;
+import stl;
 
 export class Surface
 {

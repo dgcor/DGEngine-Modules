@@ -28,16 +28,13 @@ extern "C"
 #include <libavformat/avformat.h>
 }
 
-#include <list>
-#include <memory>
-#include <string>
-
 export module sfemovie.stream;
 
 import sfemovie.movie;
 import sfemovie.streamselection;
 import sfemovie.timer;
 import sfml;
+import stl;
 
 export namespace sfe
 {

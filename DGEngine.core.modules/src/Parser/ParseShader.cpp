@@ -1,13 +1,9 @@
-module;
-
-#include <memory>
-#include <string_view>
-
 module dgengine.parser.shader;
 
 import dgengine.fileutils;
 import dgengine.parser.utils;
 import dgengine.utils.utils;
+import stl;
 
 namespace Parser
 {

@@ -1,9 +1,3 @@
-module;
-
-#include <memory>
-#include <string_view>
-#include <variant>
-
 module dgengine.parser.condition;
 
 import dgengine.ifcondition;
@@ -11,6 +5,8 @@ import dgengine.actions.condition;
 import dgengine.parser.action;
 import dgengine.parser.utils;
 import dgengine.utils.utils;
+import dgengine.variable;
+import dgengine.varorpredicate;
 
 namespace Parser
 {

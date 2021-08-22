@@ -1,13 +1,8 @@
-module;
-
-#include <memory>
-#include <unordered_map>
-#include <variant>
-
 export module dgengine.audiosource;
 
 import dgengine.sfml.physfsstream;
 import sfml;
+import stl;
 
 export struct SoundBufferLoops
 {

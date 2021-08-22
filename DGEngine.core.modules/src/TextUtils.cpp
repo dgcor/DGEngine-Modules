@@ -1,8 +1,3 @@
-module;
-
-#include <string_view>
-#include <vector>
-
 module dgengine.textutils;
 
 import dgengine.game;

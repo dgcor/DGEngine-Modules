@@ -1,15 +1,10 @@
-module;
-
-#include <memory>
-#include <string_view>
-#include <variant>
-
 export module dgengine.actions.font;
 
 import dgengine.actions.action;
 import dgengine.font;
 import dgengine.game;
 import sfml;
+import stl;
 
 export class ActFontSetPaletteOrColor : public Action
 {

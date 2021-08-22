@@ -1,13 +1,10 @@
-module;
-
-#include <cstdint>
-#include <string_view>
-
 export module dgengine.animation;
 
 import dgengine.baseanimation;
 import dgengine.image;
+import dgengine.variable;
 import sfml;
+import stl;
 
 export class Animation : public Image
 {

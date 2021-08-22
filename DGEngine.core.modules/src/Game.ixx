@@ -1,11 +1,3 @@
-module;
-
-#include <algorithm>
-#include <string>
-#include <string_view>
-#include <variant>
-#include <vector>
-
 export module dgengine.game;
 
 import dgengine.eventmanager;
@@ -18,6 +10,7 @@ import dgengine.shader;
 import dgengine.utils.unorderedstringmap;
 import dgengine.variable;
 import sfml;
+import stl;
 
 export class Game : public sf::NonCopyable, public Queryable
 {

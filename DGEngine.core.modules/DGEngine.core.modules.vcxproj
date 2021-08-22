@@ -179,6 +179,7 @@
     <ClCompile Include="src\Modules\dgengine.texturepacks.ixx" />
     <ClCompile Include="src\Modules\dgengine.utils.ixx" />
     <ClCompile Include="src\Modules\sfml.ixx" />
+    <ClCompile Include="src\Modules\stl.ixx" />
     <ClCompile Include="src\Movie2.cpp" />
     <ClCompile Include="src\Movie2.ixx" />
     <ClCompile Include="src\Palette.cpp" />

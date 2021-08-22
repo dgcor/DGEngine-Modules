@@ -1,7 +1,3 @@
-module;
-
-#include <memory>
-
 module dgengine.sfml.sprite2;
 
 import dgengine.sfml.utils;

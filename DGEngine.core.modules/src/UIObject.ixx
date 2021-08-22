@@ -1,14 +1,11 @@
-module;
-
-#include <memory>
-#include <string_view>
-
 export module dgengine.uiobject;
 
 import dgengine.actions.action;
 import dgengine.anchor;
 import dgengine.queryable;
+import dgengine.variable;
 import sfml;
+import stl;
 
 export class Game;
 

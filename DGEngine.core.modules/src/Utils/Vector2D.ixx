@@ -1,11 +1,7 @@
-module;
-
-#include <concepts>
-#include <vector>
-
 export module dgengine.utils.vector2d;
 
 import dgengine.utils.helper2d;
+import stl;
 
 export
 {

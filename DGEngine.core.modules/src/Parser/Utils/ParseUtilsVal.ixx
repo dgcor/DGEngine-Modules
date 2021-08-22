@@ -1,8 +1,3 @@
-module;
-
-#include <string_view>
-#include <vector>
-
 export module dgengine.parser.utils.val;
 
 import dgengine.anchor;
@@ -19,6 +14,7 @@ import dgengine.utils.unorderedstringmap;
 import dgengine.variable;
 import dgengine.varorpredicate;
 import sfml;
+import stl;
 
 export namespace Parser
 {

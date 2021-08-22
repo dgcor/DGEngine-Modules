@@ -1,9 +1,3 @@
-module;
-
-#include <cstdint>
-#include <string>
-#include <variant>
-
 module dgengine.variable;
 
 import dgengine.utils.utils;

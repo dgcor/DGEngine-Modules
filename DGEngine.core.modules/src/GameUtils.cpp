@@ -1,9 +1,3 @@
-module;
-
-#include <algorithm>
-#include <cmath>
-#include <string_view>
-
 module dgengine.gameutils;
 
 import dgengine.utils.utils;

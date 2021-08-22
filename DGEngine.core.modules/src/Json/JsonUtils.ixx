@@ -1,9 +1,3 @@
-module;
-
-#include <functional>
-#include <string_view>
-#include <variant>
-
 export module dgengine.json.utils;
 
 import dgengine.fileutils;
@@ -11,6 +5,7 @@ import dgengine.game;
 import dgengine.json.parser;
 import dgengine.queryable;
 import dgengine.variable;
+import stl;
 
 export namespace JsonUtils
 {

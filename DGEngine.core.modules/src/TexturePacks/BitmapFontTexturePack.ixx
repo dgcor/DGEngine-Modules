@@ -1,10 +1,7 @@
-module;
-
-#include <vector>
-
 export module dgengine.texturepacks.bitmapfonttexturepack;
 
 import dgengine.texturepacks.texturepack;
+import stl;
 
 export class BitmapFontTexturePack : public TexturePack
 {

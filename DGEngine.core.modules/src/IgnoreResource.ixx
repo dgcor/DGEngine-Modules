@@ -1,9 +1,6 @@
-module;
-
-#include <cstdint>
-#include <type_traits>
-
 export module dgengine.ignoreresource;
+
+import stl;
 
 export enum class IgnoreResource : int32_t
 {

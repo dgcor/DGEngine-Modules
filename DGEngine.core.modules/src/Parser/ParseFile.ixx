@@ -1,13 +1,9 @@
-module;
-
-#include <string_view>
-#include <vector>
-
 export module dgengine.parser.file;
 
 import dgengine.game;
 import dgengine.json.parser;
 import dgengine.parser.properties;
+import stl;
 
 export namespace Parser
 {

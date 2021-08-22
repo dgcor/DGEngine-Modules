@@ -1,8 +1,3 @@
-module;
-
-#include <cstdint>
-#include <memory>
-
 module dgengine.fadeinout;
 
 import dgengine.game;

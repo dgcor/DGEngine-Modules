@@ -1,14 +1,10 @@
-module;
-
-#include <memory>
-#include <string_view>
-
 export module dgengine.bitmapfont;
 
 import dgengine.alignment;
 import dgengine.sfml.vertexarray2;
 import dgengine.texturepacks.texturepack;
 import sfml;
+import stl;
 
 export class BitmapFont
 {

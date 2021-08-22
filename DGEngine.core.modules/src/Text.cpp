@@ -1,9 +1,3 @@
-module;
-
-#include <memory>
-#include <string_view>
-#include <vector>
-
 module dgengine.text;
 
 import dgengine.utils.utils;

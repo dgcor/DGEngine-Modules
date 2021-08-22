@@ -1,10 +1,6 @@
-module;
-
-#include <algorithm>
-#include <array>
-#include <utility>
-
 export module dgengine.utils.fixedmap;
+
+import stl;
 
 export
 {

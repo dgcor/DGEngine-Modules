@@ -1,12 +1,10 @@
-module;
-
-#include <string_view>
-
 export module dgengine.stringbutton;
 
 import dgengine.bindabletext;
 import dgengine.button;
+import dgengine.variable;
 import sfml;
+import stl;
 
 export class StringButton : public Button, public BindableText
 {

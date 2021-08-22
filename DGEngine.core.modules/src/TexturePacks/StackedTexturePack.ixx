@@ -1,10 +1,7 @@
-module;
-
-#include <vector>
-
 export module dgengine.texturepacks.stackedtexturepack;
 
 import dgengine.texturepacks.texturepack;
+import stl;
 
 export class StackedTexturePack : public TexturePack
 {

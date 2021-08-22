@@ -1,9 +1,3 @@
-module;
-
-#include <cassert>
-#include <memory>
-#include <string_view>
-
 module dgengine.parser.shape;
 
 import dgengine.gameutils;

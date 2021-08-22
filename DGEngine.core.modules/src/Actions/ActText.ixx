@@ -1,10 +1,3 @@
-module;
-
-#include <memory>
-#include <string_view>
-#include <variant>
-#include <vector>
-
 export module dgengine.actions.text;
 
 import dgengine.actions.action;
@@ -14,6 +7,7 @@ import dgengine.font;
 import dgengine.game;
 import dgengine.stringtext;
 import dgengine.textutils;
+import stl;
 
 export class ActTextAppendText : public Action
 {

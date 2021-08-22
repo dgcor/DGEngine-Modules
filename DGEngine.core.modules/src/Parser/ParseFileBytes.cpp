@@ -1,12 +1,9 @@
-module;
-
-#include <memory>
-#include <string_view>
-
 module dgengine.parser.filebytes;
 
+import dgengine.filebytes;
 import dgengine.fileutils;
 import dgengine.parser.utils;
+import stl;
 
 namespace Parser
 {

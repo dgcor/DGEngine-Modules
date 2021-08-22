@@ -1,11 +1,3 @@
-module;
-
-#include <cmath>
-#include <memory>
-#include <string_view>
-#include <variant>
-#include <vector>
-
 export module dgengine.actions.menu;
 
 import dgengine.actions.action;
@@ -16,6 +8,7 @@ import dgengine.menu;
 import dgengine.stringtext;
 import dgengine.textutils;
 import dgengine.variable;
+import stl;
 
 export class ActMenuAppendText : public Action
 {

@@ -1,12 +1,9 @@
-module;
-
-#include <memory>
-#include <string_view>
-
 module dgengine.parser.event;
 
+import dgengine.event;
 import dgengine.parser.action;
 import dgengine.parser.utils;
+import stl;
 
 namespace Parser
 {

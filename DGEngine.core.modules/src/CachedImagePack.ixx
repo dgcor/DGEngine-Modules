@@ -1,14 +1,9 @@
-module;
-
-#include <memory>
-#include <optional>
-#include <vector>
-
 export module dgengine.cachedimagepack;
 
 import dgengine.imagecontainers.imagecontainer;
 import dgengine.palette;
 import sfml;
+import stl;
 
 export class CachedImagePack
 {

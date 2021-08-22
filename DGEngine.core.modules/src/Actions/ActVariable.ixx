@@ -1,14 +1,9 @@
-module;
-
-#include <memory>
-#include <string_view>
-#include <variant>
-
 export module dgengine.actions.variable;
 
 import dgengine.actions.action;
 import dgengine.game;
 import dgengine.variable;
+import stl;
 
 export class ActVariableAdd : public Action
 {

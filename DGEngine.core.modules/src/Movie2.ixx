@@ -1,8 +1,3 @@
-module;
-
-#include <memory>
-#include <string_view>
-
 export module dgengine.movie;
 
 import dgengine.actions.action;
@@ -11,7 +6,9 @@ import dgengine.sfml.physfsstream;
 import sfemovie.movie;
 #endif
 import dgengine.uiobject;
+import dgengine.variable;
 import sfml;
+import stl;
 
 export class Movie : public UIObject
 {

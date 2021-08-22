@@ -1,11 +1,8 @@
-module;
-
-#include <memory>
-
 export module dgengine.shader;
 
 import dgengine.utils.fixedarray;
 import sfml;
+import stl;
 
 export struct GameShader
 {

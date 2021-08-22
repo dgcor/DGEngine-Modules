@@ -1,12 +1,9 @@
-module;
-
-#include <memory>
-
 export module dgengine.actions.loadingscreen;
 
 import dgengine.actions.action;
 import dgengine.game;
 import dgengine.utils.utils;
+import stl;
 
 export class ActLoadingScreenSetProgress : public Action
 {

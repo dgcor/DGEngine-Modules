@@ -1,12 +1,8 @@
-module;
-
-#include <memory>
-#include <string_view>
-
 module dgengine.parser.icon;
 
 import dgengine.imageutils;
 import dgengine.parser.utils;
+import stl;
 
 namespace Parser
 {

@@ -1,8 +1,3 @@
-module;
-
-#include <cstdint>
-#include <string_view>
-
 module dgengine.imagecontainers.simpleimagecontainer;
 
 import dgengine.imageutils;

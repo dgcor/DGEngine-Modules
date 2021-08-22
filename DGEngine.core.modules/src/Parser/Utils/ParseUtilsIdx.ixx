@@ -1,10 +1,7 @@
-module;
-
-#include <string_view>
-
 export module dgengine.parser.utils.idx;
 
 import dgengine.json.parser;
+import stl;
 
 export namespace Parser
 {

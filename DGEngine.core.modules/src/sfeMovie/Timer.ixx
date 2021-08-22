@@ -21,14 +21,11 @@
  *
  */
 
-module;
-
-#include <vector>
-
 export module sfemovie.timer;
 
 import sfemovie.movie;
 import sfml;
+import stl;
 
 export namespace sfe
 {

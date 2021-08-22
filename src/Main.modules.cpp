@@ -1,5 +1,7 @@
 #include <iostream>
 import dgengine;
+import sfml;
+import stl;
 
 int main(int argc, char* argv[])
 {

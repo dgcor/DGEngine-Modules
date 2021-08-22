@@ -1,8 +1,3 @@
-module;
-
-#include <string_view>
-#include <variant>
-
 export module dgengine.queryable;
 
 import dgengine.actions.action;
@@ -10,6 +5,7 @@ import dgengine.anchor;
 import dgengine.utils.number;
 import dgengine.variable;
 import dgengine.textureinfo;
+import stl;
 
 export class Queryable
 {

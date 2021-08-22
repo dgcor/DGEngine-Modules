@@ -1,7 +1,3 @@
-module;
-
-#include <memory>
-
 export module dgengine.parser.variable;
 
 import dgengine.game;

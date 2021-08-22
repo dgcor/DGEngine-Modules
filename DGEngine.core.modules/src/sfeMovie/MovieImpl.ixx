@@ -21,15 +21,11 @@
  *
  */
 
-module;
-
-#include <memory>
-#include <string_view>
-
 export module sfemovie.movieimpl;
 
 import sfemovie.videostream;
 import sfml;
+import stl;
 
 export namespace sfe
 {

@@ -1,13 +1,10 @@
-module;
-
-#include <memory>
-#include <string_view>
-
 export module dgengine.actions.audio;
 
 import dgengine.actions.action;
 import dgengine.game;
 import dgengine.sfml.musicloops;
+import dgengine.variable;
+import stl;
 
 export class ActAudioDelete : public Action
 {

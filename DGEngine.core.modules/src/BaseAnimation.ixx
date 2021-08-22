@@ -1,7 +1,3 @@
-module;
-
-#include <memory>
-
 export module dgengine.baseanimation;
 
 import dgengine.animationinfo;
@@ -11,6 +7,7 @@ import dgengine.texturepacks.compositetexturepack;
 import dgengine.texturepacks.texturepack;
 import dgengine.utils.elapsedtime;
 import sfml;
+import stl;
 
 export class BaseAnimation
 {

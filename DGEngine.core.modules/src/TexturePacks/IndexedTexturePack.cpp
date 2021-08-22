@@ -1,9 +1,3 @@
-module;
-
-#include <cstdint>
-#include <unordered_map>
-#include <utility>
-
 module dgengine.texturepacks.indexedtexturepack;
 
 IndexedTexturePack::IndexedTexturePack(std::unique_ptr<TexturePack> texturePack_,

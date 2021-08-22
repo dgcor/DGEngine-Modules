@@ -1,12 +1,8 @@
-module;
-
-#include <memory>
-#include <variant>
-
 export module dgengine.varorpredicate;
 
 import dgengine.predicates.predicate;
 import dgengine.variable;
+import stl;
 
 export
 {

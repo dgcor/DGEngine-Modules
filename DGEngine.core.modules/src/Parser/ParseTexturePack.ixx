@@ -1,13 +1,9 @@
-module;
-
-#include <memory>
-#include <vector>
-
 export module dgengine.parser.texturepack;
 
 import dgengine.game;
 import dgengine.json.parser;
 import dgengine.texturepacks;
+import stl;
 
 export namespace Parser
 {

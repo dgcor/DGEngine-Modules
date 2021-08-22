@@ -1,9 +1,3 @@
-module;
-
-#include <array>
-#include <string_view>
-#include <vector>
-
 module dgengine.palette;
 
 import dgengine.sfml.physfsstream;

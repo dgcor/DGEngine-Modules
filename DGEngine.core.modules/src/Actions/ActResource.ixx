@@ -1,13 +1,9 @@
-module;
-
-#include <memory>
-#include <string_view>
-
 export module dgengine.actions.resource;
 
 import dgengine.actions.action;
 import dgengine.game;
 import dgengine.ignoreresource;
+import stl;
 
 export class ActResourceAdd : public Action
 {

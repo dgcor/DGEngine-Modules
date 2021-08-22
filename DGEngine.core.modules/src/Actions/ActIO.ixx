@@ -1,8 +1,3 @@
-module;
-
-#include <memory>
-#include <string_view>
-
 export module dgengine.actions.io;
 
 import dgengine.actions.action;
@@ -14,6 +9,8 @@ import dgengine.json.parser;
 import dgengine.json.utils;
 import dgengine.parser.properties;
 import dgengine.utils.utils;
+import dgengine.variable;
+import stl;
 
 export class ActDirCopy : public Action
 {

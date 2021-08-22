@@ -1,7 +1,3 @@
-module;
-
-#include <variant>
-
 module dgengine.sfml.compositesprite;
 
 CompositeSprite::CompositeSprite(const TextureInfo& ti)

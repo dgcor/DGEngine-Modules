@@ -1,17 +1,8 @@
-module;
-
-#include <cstdint>
-#include <memory>
-#include <mutex>
-#include <string_view>
-#include <variant>
-
 module dgengine.game;
 
 import dgengine.fileutils;
 import dgengine.formula;
 import dgengine.hooks;
-import dgengine.inputevent;
 import dgengine.json.utils;
 import dgengine.parser.parser;
 import dgengine.sfml.wave2;
@@ -19,7 +10,6 @@ import dgengine.sfml.utils;
 import dgengine.uiobject;
 import dgengine.utils.reverseiterable;
 import dgengine.utils.utils;
-import sfml;
 
 uint32_t Game::DefaultSizeX{ 640 };
 uint32_t Game::DefaultSizeY{ 480 };

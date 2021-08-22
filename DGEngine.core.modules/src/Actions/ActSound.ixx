@@ -1,8 +1,3 @@
-module;
-
-#include <memory>
-#include <string_view>
-
 export module dgengine.actions.sound;
 
 import dgengine.actions.action;
@@ -12,6 +7,7 @@ import dgengine.parser.sound;
 import dgengine.parser.utils;
 import dgengine.variable;
 import sfml;
+import stl;
 
 export class ActSoundLoadPlay : public Action
 {

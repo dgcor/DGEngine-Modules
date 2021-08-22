@@ -1,13 +1,9 @@
-module;
-
-#include <memory>
-#include <string_view>
-
 export module dgengine.shadermanager;
 
 import dgengine.shader;
 import dgengine.utils.unorderedstringmap;
 import sfml;
+import stl;
 
 export class ShaderManager
 {

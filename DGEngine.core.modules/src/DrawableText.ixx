@@ -1,11 +1,8 @@
-module;
-
-#include <string>
-
 export module dgengine.drawabletext;
 
 import dgengine.alignment;
 import dgengine.uiobject;
+import stl;
 
 export class DrawableText : public UIObject
 {

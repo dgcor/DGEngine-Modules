@@ -1,13 +1,10 @@
-module;
-
-#include <memory>
-#include <string_view>
-
 export module dgengine.actions.event;
 
 import dgengine.actions.action;
+import dgengine.event;
 import dgengine.game;
 import sfml;
+import stl;
 
 export class ActEventAdd : public Action
 {

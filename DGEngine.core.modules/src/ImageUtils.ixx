@@ -1,14 +1,9 @@
-module;
-
-#include <memory>
-#include <vector>
-#include <string_view>
-
 export module dgengine.imageutils;
 
 import dgengine.imagecontainers.imagecontainer;
 import dgengine.palette;
 import sfml;
+import stl;
 
 export namespace ImageUtils
 {

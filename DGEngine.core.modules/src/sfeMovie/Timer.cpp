@@ -21,10 +21,6 @@
  *
  */
 
-module;
-
-#include <utility>
-
 module sfemovie.timer;
 
 namespace sfe

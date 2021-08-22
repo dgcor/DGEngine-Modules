@@ -1,13 +1,8 @@
-module;
-
-#include <memory>
-#include <string_view>
-#include <variant>
-
 module dgengine.parser.font;
 
 import dgengine.font;
 import dgengine.parser.utils;
+import stl;
 
 namespace Parser
 {

@@ -31,8 +31,6 @@ extern "C"
 #include <stdint.h>
 }
 
-#include <mutex>
-
 module sfemovie.demuxer;
 
 import sfemovie.audiostream;

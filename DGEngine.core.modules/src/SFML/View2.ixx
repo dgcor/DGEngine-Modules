@@ -1,5 +1,3 @@
-module;
-
 export module dgengine.sfml.view2;
 
 import dgengine.anchor;

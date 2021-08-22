@@ -1,13 +1,6 @@
-module;
-
-#include <cmath>
-#include <random>
-#include <string>
-#include <string_view>
-#include <type_traits>
-#include <vector>
-
 export module dgengine.utils.utils;
+
+import stl;
 
 class RandomGenerator
 {

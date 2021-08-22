@@ -1,7 +1,3 @@
-module;
-
-#include <variant>
-
 module dgengine.sfml.vertexarray2;
 
 import dgengine.utils.utils;

@@ -1,7 +1,3 @@
-module;
-
-#include <cmath>
-
 module dgengine.sfml.text2;
 
 namespace

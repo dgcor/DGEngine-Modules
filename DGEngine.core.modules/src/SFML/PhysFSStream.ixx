@@ -1,11 +1,11 @@
 module;
 
 #include <physfs.h>
-#include <string_view>
 
 export module dgengine.sfml.physfsstream;
 
 import sfml;
+import stl;
 
 export namespace sf
 {

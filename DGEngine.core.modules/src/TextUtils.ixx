@@ -1,14 +1,10 @@
-module;
-
-#include <string_view>
-#include <vector>
-
 export module dgengine.textutils;
 
 import dgengine.actions.action;
 import dgengine.anchor;
 import dgengine.queryable;
 import sfml;
+import stl;
 
 class Game;
 

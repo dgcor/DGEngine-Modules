@@ -1,8 +1,3 @@
-module;
-
-#include <cstdint>
-#include <utility>
-
 module dgengine.texturepacks.stackedtexturepack;
 
 void StackedTexturePack::addTexturePack(const std::shared_ptr<TexturePack>& texturePack)

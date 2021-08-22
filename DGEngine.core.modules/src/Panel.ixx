@@ -1,13 +1,9 @@
-module;
-
-#include <memory>
-#include <vector>
-#include <string_view>
-
 export module dgengine.panel;
 
 import dgengine.uiobject;
+import dgengine.variable;
 import sfml;
+import stl;
 
 export class Panel : public UIObject
 {

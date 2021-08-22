@@ -29,12 +29,11 @@ extern "C"
 #include <libswscale/swscale.h>
 }
 
-#include <cstdint>
-
 export module sfemovie.videostream;
 
 import sfemovie.stream;
 import sfml;
+import stl;
 
 export namespace sfe
 {

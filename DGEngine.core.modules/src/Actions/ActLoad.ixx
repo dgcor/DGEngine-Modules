@@ -1,9 +1,3 @@
-module;
-
-#include <memory>
-#include <string_view>
-#include <vector>
-
 export module dgengine.actions.load;
 
 import dgengine.actions.action;
@@ -11,6 +5,7 @@ import dgengine.fileutils;
 import dgengine.game;
 import dgengine.parser.file;
 import dgengine.utils.utils;
+import stl;
 
 export class ActLoad : public Action
 {

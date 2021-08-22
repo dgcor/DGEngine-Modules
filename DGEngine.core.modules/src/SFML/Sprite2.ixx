@@ -1,7 +1,3 @@
-module;
-
-#include <memory>
-
 export module dgengine.sfml.sprite2;
 
 import dgengine.blendmode;
@@ -9,6 +5,7 @@ import dgengine.palette;
 import dgengine.shader;
 import dgengine.textureinfo;
 import sfml;
+import stl;
 
 export struct SpriteShaderCache
 {

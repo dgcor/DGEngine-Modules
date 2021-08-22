@@ -28,12 +28,6 @@ extern "C"
 #include <libavformat/avformat.h>
 }
 
-#include <array>
-#include <list>
-#include <memory>
-#include <string_view>
-#include <utility>
-
 export module sfemovie.demuxer;
 
 import sfemovie.audiostream;
@@ -41,6 +35,7 @@ import sfemovie.stream;
 import sfemovie.timer;
 import sfemovie.videostream;
 import sfml;
+import stl;
 
 export namespace sfe
 {

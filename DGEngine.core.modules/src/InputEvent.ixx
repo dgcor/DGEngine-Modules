@@ -1,12 +1,7 @@
-module;
-
-#include <cstdint>
-#include <type_traits>
-
 export module dgengine.inputevent;
 
-export import <compare>;
 import sfml;
+import stl;
 
 export
 {

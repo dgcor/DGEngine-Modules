@@ -1,8 +1,3 @@
-module;
-
-#include <cstdint>
-#include <utility>
-
 module dgengine.texturepacks.compositetexturepack;
 
 bool CompositeTexturePack::addGroup(uint32_t texturePackCount)

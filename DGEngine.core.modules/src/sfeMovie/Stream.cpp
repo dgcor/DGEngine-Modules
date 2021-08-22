@@ -30,10 +30,6 @@ extern "C"
 #include <libswscale/swscale.h>
 }
 
-#include <list>
-#include <memory>
-#include <string>
-
 module sfemovie.stream;
 
 import sfemovie.timerpriorities;

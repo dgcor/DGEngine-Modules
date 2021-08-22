@@ -1,12 +1,9 @@
-module;
-
-#include <vector>
-
 export module dgengine.sfml.vertexarray2;
 
 import dgengine.palette;
 import dgengine.shader;
 import sfml;
+import stl;
 
 export class VertexArray2
 {

@@ -1,8 +1,3 @@
-module;
-
-#include <cstdint>
-#include <utility>
-
 module dgengine.texturepacks.recttexturepack;
 
 void RectTexturePack::addRect(uint32_t index,

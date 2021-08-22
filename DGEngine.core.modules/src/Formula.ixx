@@ -1,13 +1,9 @@
 module;
 
-#include <string>
-#include <string_view>
-#include <variant>
-#include <vector>
-
 export module dgengine.formula;
 
 import dgengine.queryable;
+import stl;
 
 // use brackets to force order
 // ex: 2 + 2 * 4 = 16

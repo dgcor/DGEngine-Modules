@@ -1,11 +1,8 @@
-module;
-
-#include <cstdint>
-
 export module dgengine.loadingscreen;
 
 import dgengine.animation;
 import sfml;
+import stl;
 
 export class LoadingScreen : public Animation
 {

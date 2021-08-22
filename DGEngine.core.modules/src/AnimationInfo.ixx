@@ -1,12 +1,8 @@
-module;
-
-#include <cstdint>
-#include <utility>
-
 export module dgengine.animationinfo;
 
 import dgengine.animationtype;
 import sfml;
+import stl;
 
 export struct AnimationInfo
 {

@@ -1,12 +1,7 @@
-module;
-
-#include <string>
-#include <variant>
-#include <vector>
-
 export module dgengine.sfml.music2;
 
 import sfml;
+import stl;
 
 export struct MusicFile
 {

@@ -1,10 +1,6 @@
 module;
 
-#include <cassert>
-#include <memory>
 #include <physfs.h>
-#include <stdexcept>
-#include <string_view>
 
 module dgengine.parser.parser;
 

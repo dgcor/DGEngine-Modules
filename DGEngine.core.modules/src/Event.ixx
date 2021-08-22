@@ -1,13 +1,8 @@
-module;
-
-#include <memory>
-#include <string>
-#include <string_view>
-
 export module dgengine.event;
 
 import dgengine.actions.action;
 import dgengine.utils.elapsedtime;
+import stl;
 
 export class Event : public Action
 {

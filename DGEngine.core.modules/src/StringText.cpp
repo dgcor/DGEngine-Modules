@@ -1,14 +1,8 @@
-module;
-
-#include <iterator>
-#include <string_view>
-
 module dgengine.stringtext;
 
 import dgengine.game;
 import dgengine.gameutils;
 import dgengine.utils.utils;
-import sfml;
 
 StringText::StringText(const std::shared_ptr<FreeTypeFont>& font_, unsigned int characterSize)
 	: text({}, *font_)

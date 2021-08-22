@@ -1,12 +1,9 @@
-module;
-
-#include <memory>
-#include <string_view>
-
 export module dgengine.text;
 
 import dgengine.drawabletext;
 import dgengine.uiobject;
+import dgengine.variable;
+import stl;
 
 export class Text : public virtual UIObject
 {

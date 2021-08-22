@@ -1,8 +1,3 @@
-module;
-
-#include <fstream>
-#include <variant>
-
 module dgengine.sfml.music2;
 
 namespace sf

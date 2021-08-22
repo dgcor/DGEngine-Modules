@@ -1,14 +1,10 @@
-module;
-
-#include <array>
-#include <string_view>
-#include <vector>
-
 export module dgengine.palette;
 
+export import <array>;
 import sfml;
+import stl;
 
-export typedef std::array<sf::Color, 256> PaletteArray;
+export using PaletteArray = std::array<sf::Color, 256>;
 
 export class Palette
 {

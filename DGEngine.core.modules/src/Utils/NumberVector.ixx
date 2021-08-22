@@ -1,14 +1,13 @@
 module;
 
 #include "endian/little_endian.hpp"
-#include <string_view>
-#include <vector>
 
 export module dgengine.utils.numbervector;
 
 import dgengine.fileutils;
 import dgengine.sfml.physfsstream;
 import dgengine.utils.utils;
+import stl;
 
 export
 {

@@ -1,9 +1,5 @@
 module;
 
-#include <cstring>
-#include <filesystem>
-#include <fstream>
-#include <memory>
 #include <physfs.h>
 
 module dgengine.fileutils;

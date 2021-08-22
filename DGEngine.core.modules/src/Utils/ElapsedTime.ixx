@@ -1,11 +1,7 @@
-module;
-
-#include <cstdint>
-#include <type_traits>
-
 export module dgengine.utils.elapsedtime;
 
 import sfml;
+import stl;
 
 export
 {

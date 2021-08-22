@@ -1,13 +1,10 @@
-module;
-
-#include <memory>
-
 export module dgengine.actions.fade;
 
 import dgengine.actions.action;
 import dgengine.fadeinout;
 import dgengine.game;
 import sfml;
+import stl;
 
 export class ActGameFade : public Action
 {

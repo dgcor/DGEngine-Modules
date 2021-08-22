@@ -1,10 +1,3 @@
-module;
-
-#include <algorithm>
-#include <cmath>
-#include <memory>
-#include <string_view>
-
 export module dgengine.actions.drawable;
 
 import dgengine.anchor;
@@ -12,7 +5,9 @@ import dgengine.actions.action;
 import dgengine.game;
 import dgengine.gameutils;
 import dgengine.utils.utils;
+import dgengine.variable;
 import sfml;
+import stl;
 
 export class ActDrawableAddToPosition : public Action
 {

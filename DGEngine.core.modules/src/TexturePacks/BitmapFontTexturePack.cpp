@@ -1,8 +1,3 @@
-module;
-
-#include <cstdint>
-#include <utility>
-
 module dgengine.texturepacks.bitmapfonttexturepack;
 
 // This piece of code was originally from Lazy Foo' Productions (http://lazyfoo.net/)

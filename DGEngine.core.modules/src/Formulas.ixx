@@ -1,11 +1,8 @@
-module;
-
-#include <string_view>
-
 export module dgengine.formulas;
 
 import dgengine.formula;
 import dgengine.queryable;
+import stl;
 
 export
 {

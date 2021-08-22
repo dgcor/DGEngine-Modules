@@ -1,14 +1,10 @@
-module;
-
-#include <optional>
-#include <string_view>
-
 export module dgengine.inputtext;
 
 import dgengine.text;
 import dgengine.utils.regex;
 import dgengine.variable;
 import sfml;
+import stl;
 
 export class InputText : public Text
 {

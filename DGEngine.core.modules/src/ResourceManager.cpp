@@ -1,16 +1,6 @@
-module;
-
-#include <list>
-#include <memory>
-#include <string>
-#include <variant>
-#include <vector>
-
 module dgengine.resourcemanager;
 
 import dgengine.game;
-import dgengine.inputevent;
-import sfml;
 
 void ResourceManager::addResource(const std::string& id)
 {

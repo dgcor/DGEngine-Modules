@@ -1,12 +1,9 @@
-module;
-
-#include <memory>
-
 export module dgengine.parser.predicate;
 
 import dgengine.game;
 import dgengine.json.parser;
 import dgengine.predicates.predicate;
+import stl;
 
 export namespace Parser
 {

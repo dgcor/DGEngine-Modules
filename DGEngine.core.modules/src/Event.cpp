@@ -1,7 +1,3 @@
-module;
-
-#include <memory>
-
 module dgengine.event;
 
 import dgengine.game;

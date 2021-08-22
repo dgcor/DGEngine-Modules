@@ -1,13 +1,8 @@
-module;
-
-#include <memory>
-#include <list>
-#include <string_view>
-
 export module dgengine.eventmanager;
 
 import dgengine.actions.action;
 import dgengine.event;
+import stl;
 
 export class EventManager
 {

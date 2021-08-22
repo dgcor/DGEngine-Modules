@@ -1,12 +1,6 @@
-module;
-
-#include <cstdint>
-#include <string_view>
-
 module dgengine.uiobject;
 
 import dgengine.utils.utils;
-import dgengine.variable;
 
 bool UIObject::getUIObjProp(const uint16_t propHash,
 	const std::string_view prop, Variable& var) const

@@ -1,11 +1,8 @@
-module;
-
-#include <cmath>
-
 module dgengine.sfml.view2;
 
 import dgengine.game;
 import dgengine.gameutils;
+import stl;
 
 sf::Vector2f View2::getPosition(const sf::Vector2f& point) const
 {

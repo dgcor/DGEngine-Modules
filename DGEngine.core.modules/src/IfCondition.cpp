@@ -1,12 +1,5 @@
-module;
-
-#include <variant>
-#include <vector>
-#include <string_view>
-
 module dgengine.ifcondition;
 
-import dgengine.game;
 import dgengine.gameutils;
 import dgengine.utils.regex;
 import dgengine.utils.utils;

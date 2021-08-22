@@ -1,11 +1,8 @@
-module;
-
-#include <vector>
-
 export module dgengine.sfml.musicloops;
 
 import dgengine.sfml.music2;
 import sfml;
+import stl;
 
 export namespace sf
 {

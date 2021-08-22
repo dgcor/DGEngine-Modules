@@ -1,10 +1,6 @@
-module;
-
-#include <string>
-#include <string_view>
-#include <unordered_map>
-
 export module dgengine.utils.unorderedstringmap;
+
+import stl;
 
 export
 {

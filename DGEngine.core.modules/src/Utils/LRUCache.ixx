@@ -1,10 +1,7 @@
-module;
-
-#include <algorithm>
-
 export module dgengine.utils.lrucache;
 
 import dgengine.utils.fixedmap;
+import stl;
 
 export
 {

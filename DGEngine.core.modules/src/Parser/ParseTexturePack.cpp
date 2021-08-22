@@ -1,10 +1,3 @@
-module;
-
-#include <algorithm>
-#include <cassert>
-#include <memory>
-#include <string_view>
-
 module dgengine.parser.texturepack;
 
 import dgengine.fileutils;

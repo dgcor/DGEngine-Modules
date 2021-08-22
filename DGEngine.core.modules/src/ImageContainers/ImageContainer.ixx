@@ -1,13 +1,10 @@
-module;
-
-#include <cstdint>
-
 export module dgengine.imagecontainers.imagecontainer;
 
 import dgengine.blendmode;
 import dgengine.palette;
 import dgengine.sfml.image2;
 import sfml;
+import stl;
 
 export class ImageContainer
 {

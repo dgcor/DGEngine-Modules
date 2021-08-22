@@ -1,13 +1,10 @@
-module;
-
-#include <memory>
-#include <string_view>
-
 export module dgengine.scrollable;
 
 import dgengine.sfml.view2;
 import dgengine.uiobject;
 import dgengine.utils.elapsedtime;
+import dgengine.variable;
+import stl;
 
 export class Scrollable : public UIObject
 {

@@ -1,10 +1,3 @@
-module;
-
-#include <cassert>
-#include <iostream>
-#include <memory>
-#include <string_view>
-
 module dgengine.parser.movie;
 
 import dgengine.gameutils;

@@ -1,7 +1,3 @@
-module;
-
-#include <string_view>
-
 module dgengine.parser.utils.idx;
 
 import dgengine.parser.utils.val;

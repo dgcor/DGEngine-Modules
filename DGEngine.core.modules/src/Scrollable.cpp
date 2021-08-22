@@ -1,7 +1,3 @@
-module;
-
-#include <string_view>
-
 module dgengine.scrollable;
 
 import dgengine.game;

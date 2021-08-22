@@ -1,9 +1,3 @@
-module;
-
-#include <cstdint>
-#include <memory>
-#include <utility>
-
 module dgengine.texturepacks.cachedtexturepack;
 
 CachedTexturePack::CachedTexturePack(const std::shared_ptr<ImageContainer>& imgPack_,

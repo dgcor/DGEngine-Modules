@@ -1,12 +1,9 @@
-module;
-
-#include <memory>
-#include <string_view>
-
 export module dgengine.rectangle;
 
 import dgengine.uiobject;
+import dgengine.variable;
 import sfml;
+import stl;
 
 export class Rectangle : public sf::RectangleShape, public UIObject
 {

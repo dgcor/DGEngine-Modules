@@ -1,8 +1,6 @@
-module;
-
-#include <cstdint>
-
 export module dgengine.utils.number;
+
+import stl;
 
 export
 {

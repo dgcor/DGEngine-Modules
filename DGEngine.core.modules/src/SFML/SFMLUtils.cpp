@@ -1,13 +1,4 @@
-module;
-
-#include <cmath>
-#include <cstdlib>
-#include <string_view>
-
 module dgengine.sfml.utils;
-
-import dgengine.blendmode;
-import sfml;
 
 namespace SFMLUtils
 {

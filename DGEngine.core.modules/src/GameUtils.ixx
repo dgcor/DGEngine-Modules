@@ -1,7 +1,3 @@
-module;
-
-#include <string_view>
-
 export module dgengine.gameutils;
 
 import dgengine.alignment;
@@ -16,6 +12,7 @@ import dgengine.palette;
 import dgengine.queryable;
 import dgengine.variable;
 import sfml;
+import stl;
 
 export namespace GameUtils
 {
