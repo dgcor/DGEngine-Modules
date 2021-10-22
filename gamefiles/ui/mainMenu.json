@@ -3,16 +3,11 @@
     "name": "resource.add",
     "id": "mainMenu"
   },
-  "inputEvent": [
-    {
-      "key": "f1",
-      "action": { "name": "load", "file": "ui/settings.json" }
-    },
-    {
-      "key": "esc",
-      "action": { "name": "button.click", "id": "quit" }
-    }
-  ],
+  "load": "res/fonts.json",
+  "inputEvent": {
+    "key": "esc",
+    "action": { "name": "button.click", "id": "quit" }
+  },
   "texture": [
     {
       "id": "empty",
@@ -29,16 +24,19 @@
     "texture": "cross",
     "anchor": "all"
   },
-  "font": {
-    "id": "liberationSerif",
-    "file": "res/LiberationSerif-Regular.ttf"
-  },
-  "text": {
-    "id": "creditsText",
-    "font": "liberationSerif",
-    "fontSize": 16,
-    "file": "ui/credits.txt"
-  },
+  "text": [
+    {
+      "id": "title",
+      "position": ["center", 10],
+      "font": "fontCyan",
+      "text": "C++20 Modules"
+    },
+    {
+      "id": "creditsText",
+      "font": "fontBronze",
+      "file": "ui/credits.txt"
+    }
+  ],
   "scrollable": {
     "id": "creditsScroll",
     "drawable": "creditsText",
