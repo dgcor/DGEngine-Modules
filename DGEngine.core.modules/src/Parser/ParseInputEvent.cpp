@@ -60,30 +60,30 @@ namespace Parser
 		evt.key.shift = getBoolKey(elem, "shift");
 		evt.key.system = getBoolKey(elem, "system");
 
-		const auto& keyElem = elem["key"sv];
+			const auto& keyElem = elem["key"sv];
 
-		if (keyElem.IsArray() == true)
-		{
-			for (const auto& arrVal : keyElem)
+			if (keyElem.IsArray() == true)
 			{
+				for (const auto& arrVal : keyElem)
+				{
 				auto keyCode = Parser::getKeyCodeVal(arrVal);
 				if (keyCode != sf::Keyboard::Key::Unknown)
+					{
+						evt.key.code = keyCode;
+						game.Resources().setInputAction(updateKeyEvent(evt), action);
+					}
+				}
+			}
+			else
+			{
+			auto keyCode = Parser::getKeyCodeVal(keyElem);
+			if (keyCode != sf::Keyboard::Key::Unknown)
 				{
 					evt.key.code = keyCode;
 					game.Resources().setInputAction(updateKeyEvent(evt), action);
 				}
 			}
 		}
-		else
-		{
-			auto keyCode = Parser::getKeyCodeVal(keyElem);
-			if (keyCode != sf::Keyboard::Key::Unknown)
-			{
-				evt.key.code = keyCode;
-				game.Resources().setInputAction(updateKeyEvent(evt), action);
-			}
-		}
-	}
 
 	void parseEventKey(Game& game, const Value& elem)
 	{
@@ -98,31 +98,31 @@ namespace Parser
 			actionHash = str2int16(elem["event"sv].GetStringView());
 		}
 
-		const auto& keyElem = elem["key"sv];
+			const auto& keyElem = elem["key"sv];
 
-		if (keyElem.IsArray() == true)
-		{
+			if (keyElem.IsArray() == true)
+			{
 			InputEvent evt;
 			evt.type = InputType::Keyboard;
-			for (const auto& arrVal : keyElem)
-			{
+				for (const auto& arrVal : keyElem)
+				{
 				auto keyCode = Parser::getKeyCodeVal(arrVal);
 				if (keyCode != sf::Keyboard::Key::Unknown)
-				{
-					evt.value = keyCode;
-					game.Resources().setInputEvent(evt, actionHash);
+					{
+						evt.value = keyCode;
+						game.Resources().setInputEvent(evt, actionHash);
+					}
 				}
 			}
-		}
-		else
-		{
+			else
+			{
 			InputEvent evt;
 			evt.type = InputType::Keyboard;
 			auto keyCode = Parser::getKeyCodeVal(keyElem);
 			if (keyCode != sf::Keyboard::Key::Unknown)
-			{
-				evt.value = keyCode;
-				game.Resources().setInputEvent(evt, actionHash);
+				{
+					evt.value = keyCode;
+					game.Resources().setInputEvent(evt, actionHash);
 			}
 		}
 	}

@@ -2,6 +2,7 @@ module dgengine.game;
 
 import dgengine.fileutils;
 import dgengine.formula;
+import dgengine.gameutils;
 import dgengine.hooks;
 import dgengine.json.utils;
 import dgengine.parser.parser;
@@ -906,7 +907,7 @@ void Game::addPlayingSound(const sf::SoundBuffer* obj)
 
 bool Game::getVariableNoToken(const std::string_view key, Variable& var) const
 {
-	auto it = variables.find(sv2str(key));
+	auto it = variables.find(key);
 	if (it != variables.cend())
 	{
 		var = it->second;

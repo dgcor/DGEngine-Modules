@@ -3,26 +3,6 @@ export module dgengine.sfml.music2;
 import sfml;
 import stl;
 
-export struct MusicFile
-{
-	sf::InputSoundFile file;
-	std::vector<sf::Int16> samples;
-
-	MusicFile() = default;
-	~MusicFile() = default;
-};
-
-export struct MusicBuffer
-{
-	const sf::Int16* samples{ nullptr };
-	sf::Uint64 sampleCount{ 0 };
-	size_t channelCount{ 0 };
-	size_t sampleRate{ 0 };
-	size_t sampleBufferSize{ 0 };
-	sf::Uint64 sampleBufferOffset{ 0 };
-	sf::Time duration;
-};
-
 export namespace sf
 {
 	class InputStream;
@@ -31,6 +11,26 @@ export namespace sf
 	class Music2 : public SoundStream
 	{
 	protected:
+		struct MusicFile
+		{
+			InputSoundFile file;
+			std::vector<Int16> samples;
+
+			MusicFile() = default;
+			~MusicFile() = default;
+		};
+
+		struct MusicBuffer
+		{
+			const Int16* samples{ nullptr };
+			Uint64 sampleCount{ 0 };
+			size_t channelCount{ 0 };
+			size_t sampleRate{ 0 };
+			size_t sampleBufferSize{ 0 };
+			Uint64 sampleBufferOffset{ 0 };
+			Time duration;
+		};
+
 		std::variant<std::nullptr_t, MusicFile, MusicBuffer> m_data;
 		Mutex m_mutex;
 		Music::Span<Uint64> m_loopSpan;

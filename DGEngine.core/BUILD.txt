@@ -1,6 +1,6 @@
 * Windows
 
-To compile in Windows, you can use CMake or the Visual Studio 2019 project.
+To compile in Windows, you can use CMake or the Visual Studio 2022 project.
 
 The easiest way to get the required dependencies is to use vcpkg.
 

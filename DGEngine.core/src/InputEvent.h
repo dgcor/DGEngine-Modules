@@ -22,8 +22,8 @@ enum class InputType : int32_t
 
 struct InputEvent
 {
-	InputType type;
-	int32_t value;
+	InputType type{};
+	int32_t value{};
 
 	bool isActive() const;
 

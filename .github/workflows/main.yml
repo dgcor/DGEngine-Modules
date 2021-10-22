@@ -9,7 +9,7 @@ on:
 jobs:
   build_windows:
     name: windows build
-    runs-on: windows-2019
+    runs-on: windows-2022
     steps:
     - name: Checkout DGEngine
       uses: actions/checkout@v2

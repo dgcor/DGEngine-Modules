@@ -236,7 +236,7 @@ bool ResourceManager::addTexturePack(const std::string_view key,
 void ResourceManager::addDrawable(ResourceBundle& res, const std::string_view key,
 	const std::shared_ptr<UIObject>& obj, bool manageObjDrawing)
 {
-	auto it = res.drawableIds.find(sv2str(key));
+	auto it = res.drawableIds.find(key);
 	if (it == res.drawableIds.end())
 	{
 		auto it2 = res.drawableIds.insert(std::make_pair(key, obj));
@@ -324,7 +324,7 @@ std::shared_ptr<Action> ResourceManager::getAction(const std::string_view key) c
 {
 	for (const auto& res : reverse(resources))
 	{
-		const auto elem = res.actions.find(sv2str(key));
+		const auto elem = res.actions.find(key);
 		if (elem != res.actions.cend())
 		{
 			return elem->second;
@@ -371,7 +371,7 @@ std::shared_ptr<sf::Music2> ResourceManager::getSong(const std::string_view key)
 {
 	for (const auto& res : reverse(resources))
 	{
-		const auto elem = res.songs.find(sv2str(key));
+		const auto elem = res.songs.find(key);
 		if (elem != res.songs.cend())
 		{
 			return elem->second;
@@ -419,7 +419,7 @@ bool ResourceManager::hasSong(const std::string_view key, bool checkTopOnly) con
 {
 	for (const auto& resource : resources)
 	{
-		if (resource.songs.find(sv2str(key)) != resource.songs.cend())
+		if (resource.songs.find(key) != resource.songs.cend())
 		{
 			return true;
 		}
@@ -450,7 +450,7 @@ bool ResourceManager::hasDrawable(const std::string_view key) const
 {
 	for (const auto& resource : resources)
 	{
-		if (resource.drawableIds.find(sv2str(key)) != resource.drawableIds.cend())
+		if (resource.drawableIds.find(key) != resource.drawableIds.cend())
 		{
 			return true;
 		}
@@ -462,7 +462,7 @@ void ResourceManager::bringDrawableToFront(const std::string& id)
 {
 	for (auto& resource : reverse(resources))
 	{
-		auto itDraw = resource.drawableIds.find(sv2str(id));
+		auto itDraw = resource.drawableIds.find(id);
 		if (itDraw == resource.drawableIds.cend())
 		{
 			continue;
@@ -538,7 +538,7 @@ void ResourceManager::deleteDrawable(UIObject* obj)
 
 void ResourceManager::play(const std::string_view key)
 {
-	auto it = resources.back().songs.find(sv2str(key));
+	auto it = resources.back().songs.find(key);
 	if (it != resources.back().songs.end())
 	{
 		it->second->play();
@@ -592,11 +592,11 @@ void ResourceManager::deleteSong(const std::string_view key)
 {
 	for (auto& res : reverse(resources))
 	{
-		auto it = res.songs.find(sv2str(key));
+		auto it = res.songs.find(key);
 		if (it != res.songs.end())
 		{
 			res.songs.erase(it);
-			auto range = res.resources.equal_range(sv2str(key));
+			auto range = res.resources.equal_range(key);
 			for (; range.first != range.second; ++range.first)
 			{
 				if (std::holds_alternative<AudioSource>(range.first->second) == true)

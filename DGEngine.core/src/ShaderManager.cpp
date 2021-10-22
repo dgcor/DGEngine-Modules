@@ -145,7 +145,7 @@ void ShaderManager::init(GameShaders& gameShaders) const
 
 void ShaderManager::add(const std::string_view id, GameShader&& shader)
 {
-	if (shaders.find(sv2str(id)) == shaders.end())
+	if (shaders.find(id) == shaders.end())
 	{
 		auto it = shaders.insert(std::make_pair(id, std::move(shader)));
 		if (it.second == false)
@@ -157,7 +157,7 @@ void ShaderManager::add(const std::string_view id, GameShader&& shader)
 
 GameShader* ShaderManager::get(const std::string_view id) const
 {
-	auto it = shaders.find(sv2str(id));
+	auto it = shaders.find(id);
 	if (it != shaders.end())
 	{
 		return &it->second;
@@ -167,5 +167,5 @@ GameShader* ShaderManager::get(const std::string_view id) const
 
 bool ShaderManager::has(const std::string_view id) const
 {
-	return shaders.find(sv2str(id)) != shaders.end();
+	return shaders.find(id) != shaders.end();
 }

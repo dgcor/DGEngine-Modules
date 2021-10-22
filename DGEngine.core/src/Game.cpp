@@ -2,6 +2,7 @@
 #include "Button.h"
 #include "FileUtils.h"
 #include "Formula.h"
+#include "GameUtils.h"
 #include "Hooks.h"
 #include "Image.h"
 #include "Json/JsonUtils.h"
@@ -908,7 +909,7 @@ void Game::addPlayingSound(const sf::SoundBuffer* obj)
 
 bool Game::getVariableNoToken(const std::string_view key, Variable& var) const
 {
-	auto it = variables.find(sv2str(key));
+	auto it = variables.find(key);
 	if (it != variables.cend())
 	{
 		var = it->second;

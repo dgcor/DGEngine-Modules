@@ -6,12 +6,12 @@ namespace SaveUtils
 
 	bool hasProperty(const Save::Properties& properties, const std::string_view key)
 	{
-		return properties.find(sv2str(key)) != properties.cend();
+		return properties.find(key) != properties.cend();
 	}
 
 	bool getBoolProperty(const Save::Properties& properties, const std::string_view key)
 	{
-		const auto elem = properties.find(sv2str(key));
+		const auto elem = properties.find(key);
 		if (elem != properties.cend())
 		{
 			return VarUtils::toBool(elem->second);
@@ -21,7 +21,7 @@ namespace SaveUtils
 
 	int64_t getInt64Property(const Save::Properties& properties, const std::string_view key)
 	{
-		const auto elem = properties.find(sv2str(key));
+		const auto elem = properties.find(key);
 		if (elem != properties.cend())
 		{
 			return VarUtils::toInt64(elem->second);
@@ -31,7 +31,7 @@ namespace SaveUtils
 
 	double getDoubleProperty(const Save::Properties& properties, const std::string_view key)
 	{
-		const auto elem = properties.find(sv2str(key));
+		const auto elem = properties.find(key);
 		if (elem != properties.cend())
 		{
 			return VarUtils::toDouble(elem->second);
@@ -41,7 +41,7 @@ namespace SaveUtils
 
 	std::string getStringProperty(const Save::Properties& properties, const std::string_view key)
 	{
-		const auto elem = properties.find(sv2str(key));
+		const auto elem = properties.find(key);
 		if (elem != properties.cend())
 		{
 			return VarUtils::toString(elem->second);

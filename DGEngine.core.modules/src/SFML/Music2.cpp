@@ -197,12 +197,10 @@ namespace sf
 
 		if (std::holds_alternative<MusicFile>(m_data) == true)
 		{
-			auto& m_file = std::get<MusicFile>(m_data);
 			return onGetDataFile(data);
 		}
 		else if (std::holds_alternative<MusicBuffer>(m_data) == true)
 		{
-			auto& m_buffer = std::get<MusicBuffer>(m_data);
 			return onGetDataBuffer(data);
 		}
 		return false;

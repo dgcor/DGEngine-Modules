@@ -50,7 +50,7 @@ struct ResourceBundle
 	template <class T>
 	bool hasResource(const std::string_view key) const
 	{
-		auto range = resources.equal_range(sv2str(key));
+		auto range = resources.equal_range(key);
 		for (; range.first != range.second; ++range.first)
 		{
 			if (std::holds_alternative<T>(range.first->second) == true)
@@ -64,7 +64,7 @@ struct ResourceBundle
 	template <class T>
 	T getResource(const std::string_view key) const
 	{
-		auto range = resources.equal_range(sv2str(key));
+		auto range = resources.equal_range(key);
 		for (; range.first != range.second; ++range.first)
 		{
 			if (std::holds_alternative<T>(range.first->second) == true)
@@ -156,7 +156,7 @@ private:
 	{
 		for (const auto& res : reverse(resources))
 		{
-			auto range = res.resources.equal_range(sv2str(key));
+			auto range = res.resources.equal_range(key);
 			for (; range.first != range.second; ++range.first)
 			{
 				if (std::holds_alternative<T>(range.first->second) == true)
@@ -293,7 +293,7 @@ public:
 	{
 		for (const auto& res : reverse(resources))
 		{
-			auto it = res.drawableIds.find(sv2str(key));
+			auto it = res.drawableIds.find(key);
 			if (it != res.drawableIds.cend())
 			{
 				return dynamic_cast<T*>(it->second.get());
@@ -307,7 +307,7 @@ public:
 	{
 		for (const auto& res : reverse(resources))
 		{
-			auto it = res.drawableIds.find(sv2str(key));
+			auto it = res.drawableIds.find(key);
 			if (it != res.drawableIds.cend())
 			{
 				return std::dynamic_pointer_cast<T>(it->second);

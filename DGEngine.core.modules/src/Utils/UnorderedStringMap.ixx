@@ -4,8 +4,6 @@ import stl;
 
 export
 {
-#if __cpp_lib_generic_unordered_lookup
-
 	struct StringViewHashEq
 	{
 		using is_transparent = void;
@@ -27,24 +25,4 @@ export
 	// std::unordered_multimap<std::string, T> with std::string_view support
 	template <class T>
 	using UnorderedStringMultiMap = std::unordered_multimap<std::string, T, StringViewHashEq, StringViewHashEq>;
-
-	template <class T>
-	T&& sv2str(T&& t)
-	{
-		return std::forward<T>(t);
-	}
-
-#else
-
-	// std::unordered_map<std::string, T>
-	template <class T>
-	using UnorderedStringMap = std::unordered_map<std::string, T>;
-
-	// std::unordered_multimap<std::string, T>
-	template <class T>
-	using UnorderedStringMultiMap = std::unordered_multimap<std::string, T>;
-
-	using sv2str = std::string;
-
-#endif
 }
