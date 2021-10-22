@@ -89,8 +89,8 @@ export namespace sf
 	using sf::BlendAlpha;
 	using sf::BlendAdd;
 	using sf::BlendMultiply;
-	using sf::BlendMin;
-	using sf::BlendMax;
+	//using sf::BlendMin;
+	//using sf::BlendMax;
 	using sf::BlendNone;
 	using sf::CircleShape;
 	using sf::Color;
