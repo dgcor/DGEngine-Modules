@@ -12,11 +12,11 @@ jobs:
     runs-on: windows-2022
     steps:
     - name: Checkout DGEngine
-      uses: actions/checkout@v2
+      uses: actions/checkout@v3
 
     - name: Restore cached dependencies
       id: cache-windows
-      uses: actions/cache@v1
+      uses: actions/cache@v3
       with:
         path: C:/vcpkg/installed
         key: cache-windows
@@ -26,7 +26,7 @@ jobs:
       run: vcpkg install physfs:x86-windows-static sfml:x86-windows-static
 
     - name: Setup MSBuild
-      uses: microsoft/setup-msbuild@v1.0.3
+      uses: microsoft/setup-msbuild@v1
       with:
         vs-prerelease: true
 
@@ -44,7 +44,7 @@ jobs:
       run: 7z a DGEngine.zip "./Release Static NoMovie/*.exe" LICENSE.* README.* main.json gamefiles*
 
     - name: Create artifact
-      uses: actions/upload-artifact@v1
+      uses: actions/upload-artifact@v3
       with:
         name: DGEngine-windows-x86
         path: DGEngine.zip
